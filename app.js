@@ -12,10 +12,12 @@
 
       $scope.name = "";
       $scope.message = "";
+      $scope.color = ""
       $scope.checkLunch = function(){
 
         if($scope.name.length == 0){
           $scope.message = "Please enter data first";
+          $scope.color = "red"
           return;
         }
 
@@ -23,8 +25,10 @@
 
         if(lunchMenuCount <= 3){
           $scope.message = "Enjoy!";
+          $scope.color = "green"
         }else{
           $scope.message = "Too much!";
+          $scope.color = "green"
         }
 
       };
